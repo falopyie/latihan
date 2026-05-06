@@ -1,0 +1,88 @@
+<?php
+
+return [
+    [
+        'label' => 'Dashboard',
+        'icon' => 'mdi mdi-speedometer',
+        'route' => 'dashboard.index',
+        'group' => 'Overview',
+        'roles' => ['admin', 'manager', 'cashier', 'casier', 'courier'],
+    ],
+    [
+        'label' => 'Shipments',
+        'icon' => 'mdi mdi-truck-delivery',
+        'route' => 'shipments.index',
+        'group' => 'Operasional',
+        'roles' => ['admin', 'manager', 'cashier', 'casier'],
+    ],
+    [
+        'label' => 'Shipment Items',
+        'icon' => 'mdi mdi-package-variant-closed',
+        'route' => 'shipment-items.index',
+        'group' => 'Operasional',
+        'roles' => ['admin', 'manager', 'cashier', 'casier'],
+    ],
+    [
+        'label' => 'Trackings',
+        'icon' => 'mdi mdi-map-marker-path',
+        'route' => 'shipment-trackings.index',
+        'group' => 'Operasional',
+        'roles' => ['cashier', 'casier'],
+    ],
+    [
+        'label' => 'Courier Tasks',
+        'icon' => 'mdi mdi-clipboard-check-outline',
+        'route' => 'courier.tasks',
+        'group' => 'Operasional',
+        'roles' => ['admin', 'manager', 'courier'],
+    ],
+    [
+        'label' => 'Payments',
+        'icon' => 'mdi mdi-cash-multiple',
+        'route' => 'payments.index',
+        'group' => 'Keuangan',
+        'roles' => ['admin', 'manager', 'cashier', 'casier'],
+    ],
+    [
+        'label' => 'Manager Reports',
+        'icon' => 'mdi mdi-chart-box',
+        'route' => 'manager.reports',
+        'group' => 'Analitik',
+        'roles' => ['admin', 'manager'],
+    ],
+    [
+        'label' => 'Branches',
+        'icon' => 'mdi mdi-office-building',
+        'route' => 'branches.index',
+        'group' => 'Master Data',
+        'roles' => ['admin'],
+    ],
+    [
+        'label' => 'Rates',
+        'icon' => 'mdi mdi-currency-usd',
+        'route' => 'rates.index',
+        'group' => 'Master Data',
+        'roles' => ['admin'],
+    ],
+    [
+        'label' => 'Vehicles',
+        'icon' => 'mdi mdi-car',
+        'route' => 'vehicles.index',
+        'group' => 'Master Data',
+        'roles' => ['admin'],
+    ],
+    [
+        'label' => 'Customers',
+        'icon' => 'mdi mdi-account-box-multiple',
+        'route' => 'customers.index',
+        'group' => 'Master Data',
+        'roles' => ['admin'],
+    ],
+    [
+        'label' => 'Users',
+        'icon' => 'mdi mdi-account-group',
+        'route' => 'users.index',
+        'group' => 'Master Data',
+        'roles' => ['admin'],
+    ],
+];
